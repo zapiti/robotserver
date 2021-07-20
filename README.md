@@ -1,7 +1,7 @@
 # RobotServer
-    * A dart module providing the [robot framework](http://www.robotframework.org) remote library interface.
-    * For mac [mac](https://testersdock.com/robot-framework-install-mac/)
-    * Examples [tests](https://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
+* A dart module providing the [robot framework](http://www.robotframework.org) remote library interface.
+* Instal robot on  [mac](https://testersdock.com/robot-framework-install-mac/)
+* Examples robot [tests](https://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
 ## Usage
 
 Start your server
