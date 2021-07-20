@@ -1,0 +1,14 @@
+name: robotserver
+description: Robot server
+version: 1.0.0
+homepage: https://github.com/zapiti/robotserver
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  collection:
+  http:
+  meta:
+  xml:
+  xml_rpc: 0.4.0
+

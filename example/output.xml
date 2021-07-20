@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on darwin)" generated="20210720 15:36:32.014" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="/Users/60003636/Documents/projects/robotserver/example/tests.robot">
+<test id="s1-t1" name="Describe myTest">
+<kw name="Describe" library="MyTest">
+<var>${myTest details}</var>
+<msg timestamp="20210720 15:36:32.203" level="INFO">${myTest details} = teste</msg>
+<status status="PASS" starttime="20210720 15:36:32.192" endtime="20210720 15:36:32.203"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${myTest details}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210720 15:36:32.203" level="INFO">teste</msg>
+<status status="PASS" starttime="20210720 15:36:32.203" endtime="20210720 15:36:32.203"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>"${variable1}" == "${myTest details}"</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20210720 15:36:32.203" endtime="20210720 15:36:32.204"/>
+</kw>
+<status status="PASS" starttime="20210720 15:36:32.192" endtime="20210720 15:36:32.204"/>
+</test>
+<test id="s1-t2" name="Another Test">
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${MESSAGE}</arg>
+<arg>Hello, wold!</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20210720 15:36:32.205" endtime="20210720 15:36:32.205"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${MESSAGE}</arg>
+<arg>Hello, wold!</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20210720 15:36:32.205" endtime="20210720 15:36:32.205"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${isExist} is ${FALSE}</arg>
+<arg>ELSE</arg>
+<arg>No Operation</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20210720 15:36:32.205" endtime="20210720 15:36:32.206"/>
+</kw>
+<status status="PASS" starttime="20210720 15:36:32.204" endtime="20210720 15:36:32.206"/>
+</test>
+<test id="s1-t3" name="Gherkin">
+<kw name="Given Run Keyword If" library="BuiltIn">
+<arg>3 == 4</arg>
+<arg>Fatal Error</arg>
+<arg>ELSE</arg>
+<arg>No Operation</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20210720 15:36:32.206" endtime="20210720 15:36:32.207"/>
+</kw>
+<status status="PASS" starttime="20210720 15:36:32.206" endtime="20210720 15:36:32.207"/>
+</kw>
+<kw name="When Run Keyword If" library="BuiltIn">
+<arg>3 == 4</arg>
+<arg>Fatal Error</arg>
+<arg>ELSE</arg>
+<arg>No Operation</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20210720 15:36:32.207" endtime="20210720 15:36:32.207"/>
+</kw>
+<status status="PASS" starttime="20210720 15:36:32.207" endtime="20210720 15:36:32.207"/>
+</kw>
+<kw name="And Run Keyword If" library="BuiltIn">
+<arg>3 == 4</arg>
+<arg>Fatal Error</arg>
+<arg>ELSE</arg>
+<arg>No Operation</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20210720 15:36:32.207" endtime="20210720 15:36:32.208"/>
+</kw>
+<status status="PASS" starttime="20210720 15:36:32.207" endtime="20210720 15:36:32.208"/>
+</kw>
+<kw name="Then Run Keyword If" library="BuiltIn">
+<arg>3 == 4</arg>
+<arg>Fatal Error</arg>
+<arg>ELSE</arg>
+<arg>No Operation</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20210720 15:36:32.208" endtime="20210720 15:36:32.208"/>
+</kw>
+<status status="PASS" starttime="20210720 15:36:32.208" endtime="20210720 15:36:32.208"/>
+</kw>
+<doc>This test case fails a dry-run</doc>
+<status status="PASS" starttime="20210720 15:36:32.206" endtime="20210720 15:36:32.208"/>
+</test>
+<test id="s1-t4" name="No Gherkin">
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>3 == 4</arg>
+<arg>Fatal Error</arg>
+<arg>ELSE</arg>
+<arg>No Operation</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" starttime="20210720 15:36:32.209" endtime="20210720 15:36:32.209"/>
+</kw>
+<status status="PASS" starttime="20210720 15:36:32.209" endtime="20210720 15:36:32.209"/>
+</kw>
+<doc>This test case works just fine</doc>
+<status status="PASS" starttime="20210720 15:36:32.208" endtime="20210720 15:36:32.209"/>
+</test>
+<status status="PASS" starttime="20210720 15:36:32.015" endtime="20210720 15:36:32.209"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
