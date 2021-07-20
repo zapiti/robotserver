@@ -1,6 +1,5 @@
 library robotserver;
 import 'dart:mirrors';
-
 import 'package:xml_rpc/simple_server.dart' as xml_rpc_server;
 import 'src/robot_codecs.dart';
 
@@ -13,7 +12,7 @@ class RobotServer {
   var host;
   var library;
 
-  RobotServer(this.library, {this.host = '127.0.0.1', this.port = 8270}) {
+  RobotServer(this.library, {this.host = '127.0.0.1', this.port = 5001}) {
     _libraryFactory = RemoteLibraryFactory(library);
     robotRemoteHandler = RobotRemoteHandler(robotCodecs);
     _register_functions();
