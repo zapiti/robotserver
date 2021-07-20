@@ -1,6 +1,6 @@
 name: robotserver
 description: Robot server
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/zapiti/robotserver
 environment:
   sdk: '>=2.12.0 <3.0.0'
