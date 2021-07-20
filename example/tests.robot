@@ -3,7 +3,7 @@ Library           Remote    http://${ADDRESS}:${PORT}    WITH NAME    MyTest
 
 *** Variables ***
 ${ADDRESS}        127.0.0.1
-${PORT}           8270
+${PORT}           5001
 ${MESSAGE}        Hello, wold!
 ${isExist}        ${TRUE}
 ${variable1}      teste
